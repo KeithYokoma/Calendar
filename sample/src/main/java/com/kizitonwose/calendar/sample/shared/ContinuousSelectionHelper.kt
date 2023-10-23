@@ -4,9 +4,9 @@ import com.kizitonwose.calendar.core.atStartOfMonth
 import com.kizitonwose.calendar.core.nextMonth
 import com.kizitonwose.calendar.core.previousMonth
 import com.kizitonwose.calendar.core.yearMonth
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.temporal.ChronoUnit
+import org.threeten.bp.LocalDate
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.temporal.ChronoUnit
 import kotlin.LazyThreadSafetyMode.NONE
 
 data class DateSelection(val startDate: LocalDate? = null, val endDate: LocalDate? = null) {

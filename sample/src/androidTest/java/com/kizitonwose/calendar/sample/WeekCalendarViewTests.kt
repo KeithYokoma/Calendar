@@ -22,7 +22,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.lang.Thread.sleep
-import java.time.YearMonth
+import org.threeten.bp.YearMonth
 
 /**
  * These are UI behaviour tests.

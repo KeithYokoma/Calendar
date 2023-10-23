@@ -21,9 +21,9 @@ import com.kizitonwose.calendar.sample.shared.displayText
 import com.kizitonwose.calendar.view.MonthDayBinder
 import com.kizitonwose.calendar.view.MonthHeaderFooterBinder
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.LocalDate
-import java.time.YearMonth
-import java.time.format.DateTimeFormatter
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
+import org.threeten.bp.format.DateTimeFormatter
 
 class Example2Fragment : BaseFragment(R.layout.example_2_fragment), HasToolbar, HasBackButton {
 

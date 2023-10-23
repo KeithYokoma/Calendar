@@ -64,9 +64,9 @@ import com.kizitonwose.calendar.sample.compose.Example9PageSharedComponents.Mont
 import com.kizitonwose.calendar.sample.compose.Example9PageSharedComponents.WeekModeToggle
 import com.kizitonwose.calendar.sample.shared.displayText
 import kotlinx.coroutines.launch
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 /**
  * Go to [Example9PageAnimatedVisibility] to see how toggling between week and

@@ -23,8 +23,8 @@ import com.kizitonwose.calendar.view.MarginValues
 import com.kizitonwose.calendar.view.MonthDayBinder
 import com.kizitonwose.calendar.view.MonthHeaderFooterBinder
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.DayOfWeek
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
 
 /**
  * We assign this class to the `monthViewClass` attribute in XML.

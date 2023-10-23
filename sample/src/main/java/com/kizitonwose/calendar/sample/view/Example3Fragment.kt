@@ -28,10 +28,10 @@ import com.kizitonwose.calendar.sample.databinding.Example3FragmentBinding
 import com.kizitonwose.calendar.view.MonthDayBinder
 import com.kizitonwose.calendar.view.MonthHeaderFooterBinder
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
-import java.time.format.DateTimeFormatter
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
+import org.threeten.bp.format.DateTimeFormatter
 import java.util.*
 
 data class Event(val id: String, val text: String, val date: LocalDate)

@@ -13,9 +13,9 @@ import com.kizitonwose.calendar.data.checkDateRange
 import com.kizitonwose.calendar.view.internal.CalendarPageSnapHelper
 import com.kizitonwose.calendar.view.internal.monthcalendar.MonthCalendarAdapter
 import com.kizitonwose.calendar.view.internal.monthcalendar.MonthCalendarLayoutManager
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 open class CalendarView : RecyclerView {
 

@@ -19,8 +19,8 @@ import com.kizitonwose.calendar.sample.shared.displayText
 import com.kizitonwose.calendar.view.MonthDayBinder
 import com.kizitonwose.calendar.view.MonthHeaderFooterBinder
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 class Example8Fragment : BaseFragment(R.layout.example_8_fragment), HasToolbar {
 

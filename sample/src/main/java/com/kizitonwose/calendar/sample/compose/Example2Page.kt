@@ -49,9 +49,9 @@ import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.ContinuousSelectionHelper.getSelection
 import com.kizitonwose.calendar.sample.shared.DateSelection
 import com.kizitonwose.calendar.sample.shared.displayText
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 private val primaryColor = Color.Black.copy(alpha = 0.9f)
 private val selectionColor = primaryColor

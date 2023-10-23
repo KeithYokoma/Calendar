@@ -4,7 +4,7 @@ import com.kizitonwose.calendar.view.MarginValues
 import com.kizitonwose.calendar.view.WeekCalendarView
 import com.kizitonwose.calendar.view.internal.CalendarLayoutManager
 import com.kizitonwose.calendar.view.internal.dayTag
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 internal class WeekCalendarLayoutManager(private val calView: WeekCalendarView) :
     CalendarLayoutManager<LocalDate, LocalDate>(calView, HORIZONTAL) {

@@ -5,7 +5,7 @@ import com.kizitonwose.calendar.view.CalendarView
 import com.kizitonwose.calendar.view.MarginValues
 import com.kizitonwose.calendar.view.internal.CalendarLayoutManager
 import com.kizitonwose.calendar.view.internal.dayTag
-import java.time.YearMonth
+import org.threeten.bp.YearMonth
 
 internal class MonthCalendarLayoutManager(private val calView: CalendarView) :
     CalendarLayoutManager<YearMonth, CalendarDay>(calView, calView.orientation) {

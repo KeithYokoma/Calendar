@@ -3,9 +3,9 @@ package com.kizitonwose.calendar.data
 import com.kizitonwose.calendar.core.Week
 import com.kizitonwose.calendar.core.WeekDay
 import com.kizitonwose.calendar.core.WeekDayPosition
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.temporal.ChronoUnit
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.temporal.ChronoUnit
 
 data class WeekDateRange(
     val startDateAdjusted: LocalDate,

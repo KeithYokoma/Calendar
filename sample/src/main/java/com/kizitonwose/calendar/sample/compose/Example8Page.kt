@@ -48,8 +48,8 @@ import com.kizitonwose.calendar.core.yearMonth
 import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.displayText
 import kotlinx.coroutines.launch
-import java.time.DayOfWeek
-import java.time.LocalDate
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
 
 @Composable
 fun Example8Page(horizontal: Boolean = true) {

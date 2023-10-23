@@ -15,7 +15,6 @@ android {
         targetSdkVersion Android.targetSdk
     }
     compileOptions {
-        coreLibraryDesugaringEnabled true
         sourceCompatibility = Config.compatibleJavaVersion
         targetCompatibility = Config.compatibleJavaVersion
     }
@@ -33,7 +32,7 @@ android {
 dependencies {
     api project(':core')
     implementation project(':data')
-    coreLibraryDesugaring Libs.Core.deSugar
+    implementation Libs.Core.jsr310
     implementation Kotlin.stdLib
 
     implementation Libs.Compose.ui

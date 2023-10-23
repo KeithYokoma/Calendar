@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.displayText
-import java.time.YearMonth
+import org.threeten.bp.YearMonth
 
 @Composable
 fun SimpleCalendarTitle(

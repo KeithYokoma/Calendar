@@ -28,9 +28,9 @@ import com.kizitonwose.calendar.sample.shared.generateFlights
 import com.kizitonwose.calendar.view.MonthDayBinder
 import com.kizitonwose.calendar.view.MonthHeaderFooterBinder
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 class Example5FlightsAdapter :
     RecyclerView.Adapter<Example5FlightsAdapter.Example5FlightsViewHolder>() {

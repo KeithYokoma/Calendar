@@ -1,8 +1,8 @@
 package com.kizitonwose.calendar.core
 
 import androidx.compose.runtime.Immutable
+import org.threeten.bp.YearMonth
 import java.io.Serializable
-import java.time.YearMonth
 
 /**
  * Represents a month on the calendar.

@@ -35,8 +35,8 @@ import org.junit.Assert.assertNotEquals
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.time.YearMonth
-import java.time.temporal.WeekFields
+import org.threeten.bp.YearMonth
+import org.threeten.bp.temporal.WeekFields
 
 /**
  * These are UI behaviour tests.

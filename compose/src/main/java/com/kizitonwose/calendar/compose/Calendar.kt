@@ -22,7 +22,7 @@ import com.kizitonwose.calendar.core.CalendarDay
 import com.kizitonwose.calendar.core.CalendarMonth
 import com.kizitonwose.calendar.core.Week
 import com.kizitonwose.calendar.core.WeekDay
-import java.time.DayOfWeek
+import org.threeten.bp.DayOfWeek
 
 /**
  * A horizontally scrolling calendar.

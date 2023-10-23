@@ -19,8 +19,8 @@ import com.kizitonwose.calendar.view.WeekHeaderFooterBinder
 import com.kizitonwose.calendar.view.internal.NO_INDEX
 import com.kizitonwose.calendar.view.internal.dayTag
 import com.kizitonwose.calendar.view.internal.setupItemRoot
-import java.time.DayOfWeek
-import java.time.LocalDate
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
 
 internal class WeekCalendarAdapter(
     private val calView: WeekCalendarView,

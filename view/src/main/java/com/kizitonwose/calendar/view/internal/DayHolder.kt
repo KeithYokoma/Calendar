@@ -10,7 +10,7 @@ import com.kizitonwose.calendar.core.WeekDay
 import com.kizitonwose.calendar.view.Binder
 import com.kizitonwose.calendar.view.DaySize
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 internal data class DayConfig<Day>(
     val daySize: DaySize,

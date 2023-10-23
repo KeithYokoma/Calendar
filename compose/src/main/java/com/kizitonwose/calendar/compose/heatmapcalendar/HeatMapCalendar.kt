@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import com.kizitonwose.calendar.core.CalendarDay
 import com.kizitonwose.calendar.core.CalendarMonth
 import com.kizitonwose.calendar.core.daysOfWeek
-import java.time.DayOfWeek
+import org.threeten.bp.DayOfWeek
 
 @Composable
 internal fun HeatMapCalendarImpl(

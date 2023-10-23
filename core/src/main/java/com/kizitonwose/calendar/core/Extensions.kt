@@ -1,9 +1,9 @@
 package com.kizitonwose.calendar.core
 
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
-import java.time.temporal.WeekFields
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
+import org.threeten.bp.temporal.WeekFields
 import java.util.*
 
 /**

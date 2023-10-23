@@ -5,10 +5,10 @@ import android.content.Context
 import android.content.ContextWrapper
 import com.kizitonwose.calendar.core.Week
 import com.kizitonwose.calendar.core.yearMonth
-import java.time.DayOfWeek
-import java.time.Month
-import java.time.YearMonth
-import java.time.format.TextStyle
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.Month
+import org.threeten.bp.YearMonth
+import org.threeten.bp.format.TextStyle
 import java.util.*
 
 fun YearMonth.displayText(short: Boolean = false): String {

@@ -24,8 +24,8 @@ import com.kizitonwose.calendar.data.checkDateRange
 import com.kizitonwose.calendar.data.getHeatMapCalendarMonthData
 import com.kizitonwose.calendar.data.getMonthIndex
 import com.kizitonwose.calendar.data.getMonthIndicesCount
-import java.time.DayOfWeek
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
 
 /**
  * Creates a [HeatMapCalendarState] that is remembered across compositions.

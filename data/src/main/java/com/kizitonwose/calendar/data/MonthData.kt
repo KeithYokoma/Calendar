@@ -8,9 +8,9 @@ import com.kizitonwose.calendar.core.atStartOfMonth
 import com.kizitonwose.calendar.core.nextMonth
 import com.kizitonwose.calendar.core.previousMonth
 import com.kizitonwose.calendar.core.yearMonth
-import java.time.DayOfWeek
-import java.time.YearMonth
-import java.time.temporal.ChronoUnit
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
+import org.threeten.bp.temporal.ChronoUnit
 
 data class MonthData internal constructor(
     private val month: YearMonth,

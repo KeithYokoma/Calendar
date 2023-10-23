@@ -32,7 +32,7 @@ import com.kizitonwose.calendar.sample.compose.Example9PageSharedComponents.Day
 import com.kizitonwose.calendar.sample.compose.Example9PageSharedComponents.MonthAndWeekCalendarTitle
 import com.kizitonwose.calendar.sample.compose.Example9PageSharedComponents.WeekModeToggle
 import kotlinx.coroutines.launch
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 /**
  * Go to [Example9Page] to see how toggling between week and month

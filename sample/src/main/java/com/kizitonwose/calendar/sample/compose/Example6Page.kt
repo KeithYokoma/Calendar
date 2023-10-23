@@ -45,12 +45,12 @@ import com.kizitonwose.calendar.core.yearMonth
 import com.kizitonwose.calendar.sample.shared.displayText
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
-import java.time.temporal.ChronoUnit
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
+import org.threeten.bp.format.DateTimeFormatter
+import org.threeten.bp.format.FormatStyle
+import org.threeten.bp.temporal.ChronoUnit
 
 private enum class Level(val color: Color) {
     Zero(Color(0xFFEBEDF0)),

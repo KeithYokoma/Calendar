@@ -23,7 +23,7 @@ import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.ContinuousSelectionHelper.isInDateBetweenSelection
 import com.kizitonwose.calendar.sample.shared.ContinuousSelectionHelper.isOutDateBetweenSelection
 import com.kizitonwose.calendar.sample.shared.DateSelection
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 private class HalfSizeShape(private val clipStart: Boolean) : Shape {
     override fun createOutline(

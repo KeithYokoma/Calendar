@@ -6,18 +6,20 @@ import com.kizitonwose.calendar.core.daysOfWeek
 import com.kizitonwose.calendar.core.nextMonth
 import com.kizitonwose.calendar.core.previousMonth
 import com.kizitonwose.calendar.core.yearMonth
+import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Test
-import java.time.DayOfWeek
-import java.time.Month.MAY
-import java.time.Month.NOVEMBER
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
+import org.threeten.bp.zone.TzdbZoneRulesProvider
+import org.threeten.bp.zone.ZoneRulesProvider
 
 class MonthDataTests {
 
-    private val may2019 = YearMonth.of(2019, MAY)
-    private val november2019 = YearMonth.of(2019, NOVEMBER)
+    private val may2019 = YearMonth.of(2019, 5)
+    private val november2019 = YearMonth.of(2019, 11)
     private val firstDayOfWeek = DayOfWeek.MONDAY
 
     /** May and November 2019 with Monday as the first day of week.
@@ -37,6 +39,22 @@ class MonthDataTests {
      * │27│28│29│30│31│01│02│ │25│26│27│28│29│30│01│
      * └──┴──┴──┴──┴──┴──┴──┘ └──┴──┴──┴──┴──┴──┴──┘
      **/
+
+
+    @Before
+    fun setup() {
+        if (ZoneRulesProvider.getAvailableZoneIds().isEmpty()) {
+            val stream = this.javaClass.classLoader!!.getResourceAsStream("TZDB.dat")
+            stream.use(::TzdbZoneRulesProvider).apply {
+                ZoneRulesProvider.registerProvider(this)
+            }
+        }
+    }
+
+    @After
+    fun tearDown() {
+        ZoneRulesProvider.refresh()
+    }
 
     @Test
     fun `number of day positions are accurate with EndOfRow OutDateStyle`() {

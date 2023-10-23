@@ -13,7 +13,7 @@ import com.kizitonwose.calendar.view.Binder
 import com.kizitonwose.calendar.view.DaySize
 import com.kizitonwose.calendar.view.MarginValues
 import com.kizitonwose.calendar.view.ViewContainer
-import java.time.LocalDate
+import org.threeten.bp.LocalDate
 
 internal data class ItemContent<Day>(
     val itemView: ViewGroup,

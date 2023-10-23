@@ -6,11 +6,15 @@ import androidx.compose.runtime.saveable.listSaver
 import com.kizitonwose.calendar.compose.heatmapcalendar.HeatMapCalendarState
 import com.kizitonwose.calendar.compose.weekcalendar.WeekCalendarState
 import com.kizitonwose.calendar.core.OutDateStyle
+import org.junit.After
 import org.junit.Assert.assertEquals
+import org.junit.Before
 import org.junit.Test
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
+import org.threeten.bp.zone.TzdbZoneRulesProvider
+import org.threeten.bp.zone.ZoneRulesProvider
 
 /**
  * The states use the [listSaver] type so these tests should catch when we move
@@ -19,6 +23,21 @@ import java.time.YearMonth
  * state restoration (e.g via rotation) will likely not happen often.
  */
 class StateSaverTests {
+
+    @Before
+    fun setup() {
+        if (ZoneRulesProvider.getAvailableZoneIds().isEmpty()) {
+            val stream = this.javaClass.classLoader!!.getResourceAsStream("TZDB.dat")
+            stream.use(::TzdbZoneRulesProvider).apply {
+                ZoneRulesProvider.registerProvider(this)
+            }
+        }
+    }
+
+    @After
+    fun tearDown() {
+        ZoneRulesProvider.refresh()
+    }
 
     @Test
     fun `month calendar state can be restored`() {

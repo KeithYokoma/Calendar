@@ -1,7 +1,7 @@
 package com.kizitonwose.calendar.data
 
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 fun checkDateRange(startMonth: YearMonth, endMonth: YearMonth) {
     check(endMonth >= startMonth) {

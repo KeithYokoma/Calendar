@@ -4,11 +4,30 @@ import com.kizitonwose.calendar.compose.weekcalendar.WeekCalendarState
 import com.kizitonwose.calendar.core.firstDayOfWeekFromLocale
 import junit.framework.TestCase.assertEquals
 import junit.framework.TestCase.assertTrue
+import org.junit.After
+import org.junit.Before
 import org.junit.Test
-import java.time.DayOfWeek
-import java.time.LocalDate
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.zone.TzdbZoneRulesProvider
+import org.threeten.bp.zone.ZoneRulesProvider
 
 class WeekCalendarStateTests {
+
+    @Before
+    fun setup() {
+        if (ZoneRulesProvider.getAvailableZoneIds().isEmpty()) {
+            val stream = this.javaClass.classLoader!!.getResourceAsStream("TZDB.dat")
+            stream.use(::TzdbZoneRulesProvider).apply {
+                ZoneRulesProvider.registerProvider(this)
+            }
+        }
+    }
+
+    @After
+    fun tearDown() {
+        ZoneRulesProvider.refresh()
+    }
 
     @Test
     fun `start date update is reflected in the state`() {

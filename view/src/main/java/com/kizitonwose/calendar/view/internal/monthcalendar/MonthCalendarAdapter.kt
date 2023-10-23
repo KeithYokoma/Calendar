@@ -24,8 +24,8 @@ import com.kizitonwose.calendar.view.ViewContainer
 import com.kizitonwose.calendar.view.internal.NO_INDEX
 import com.kizitonwose.calendar.view.internal.dayTag
 import com.kizitonwose.calendar.view.internal.setupItemRoot
-import java.time.DayOfWeek
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
 
 internal class MonthCalendarAdapter(
     private val calView: CalendarView,

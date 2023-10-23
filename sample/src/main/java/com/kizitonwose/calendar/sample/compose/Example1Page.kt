@@ -35,8 +35,8 @@ import com.kizitonwose.calendar.core.previousMonth
 import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.displayText
 import kotlinx.coroutines.launch
-import java.time.DayOfWeek
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
 
 @Composable
 fun Example1Page(adjacentMonths: Long = 500) {

@@ -38,7 +38,7 @@ import com.kizitonwose.calendar.core.DayPosition
 import com.kizitonwose.calendar.core.firstDayOfWeekFromLocale
 import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.displayText
-import java.time.YearMonth
+import org.threeten.bp.YearMonth
 
 @Composable
 fun Example4Page() {

@@ -2,9 +2,9 @@ package com.kizitonwose.calendar.sample.shared
 
 import androidx.annotation.ColorRes
 import com.kizitonwose.calendar.sample.R
-import java.time.LocalDateTime
-import java.time.YearMonth
-import java.time.format.DateTimeFormatter
+import org.threeten.bp.LocalDateTime
+import org.threeten.bp.YearMonth
+import org.threeten.bp.format.DateTimeFormatter
 
 private typealias Airport = Flight.Airport
 

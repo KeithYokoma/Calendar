@@ -25,9 +25,9 @@ import com.kizitonwose.calendar.data.getWeekCalendarAdjustedRange
 import com.kizitonwose.calendar.data.getWeekCalendarData
 import com.kizitonwose.calendar.data.getWeekIndex
 import com.kizitonwose.calendar.data.getWeekIndicesCount
-import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.LocalDate
+import org.threeten.bp.YearMonth
 
 /**
  * Creates a [WeekCalendarState] that is remembered across compositions.

@@ -59,8 +59,8 @@ import com.kizitonwose.calendar.sample.shared.displayText
 import com.kizitonwose.calendar.sample.shared.flightDateTimeFormatter
 import com.kizitonwose.calendar.sample.shared.generateFlights
 import kotlinx.coroutines.launch
-import java.time.DayOfWeek
-import java.time.YearMonth
+import org.threeten.bp.DayOfWeek
+import org.threeten.bp.YearMonth
 import java.util.*
 
 private val flights = generateFlights().groupBy { it.time.toLocalDate() }

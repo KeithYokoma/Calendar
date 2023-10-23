@@ -34,8 +34,8 @@ import com.kizitonwose.calendar.compose.WeekCalendar
 import com.kizitonwose.calendar.compose.weekcalendar.rememberWeekCalendarState
 import com.kizitonwose.calendar.sample.R
 import com.kizitonwose.calendar.sample.shared.displayText
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
+import org.threeten.bp.LocalDate
+import org.threeten.bp.format.DateTimeFormatter
 
 @Composable
 fun Example7Page() {
